@@ -1,6 +1,6 @@
 package Ejercicio1;
 
-public class Empleado {
+public class Empleado implements Comparable<Empleado>{
 
 	private final int id;
 	private String nombre;
@@ -51,5 +51,16 @@ public class Empleado {
 	
 	public static int devuelveProximoID() {
 		return cont;
+	}
+	
+	@Override
+	public int compareTo(Empleado o) {
+		if(o.getId() == this.id) {
+			return 0;
+		}
+		if(o.getId() < this.id) {
+			return 1;
+		}
+		return -1;
 	}
 }

@@ -46,7 +46,7 @@ public class Empleado {
 
 	@Override
 	public String toString() {
-		return "Empleado [ID=" + id + ", Nombre=" + nombre + ", Edad=" + edad + "]";
+		return "[ID=" + id + ", Nombre=" + nombre + ", Edad=" + edad + " ";
 	}
 	
 	public static int devuelveProximoID() {

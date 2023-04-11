@@ -62,6 +62,14 @@ public class Profesor extends Empleado{
 		} else if (!cargo.equals(other.cargo))
 			return false;
 		
+		if(this.getEdad() != other.getEdad())
+			return false;
+		
+		if (this.getNombre() == null) {
+			if (other.getNombre() != null)
+				return false;
+		} else if (!this.getNombre().equals(other.getNombre()))
+			return false;
 		
 		return true;
 	}

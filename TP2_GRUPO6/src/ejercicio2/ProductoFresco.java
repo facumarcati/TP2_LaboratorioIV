@@ -2,7 +2,7 @@ package ejercicio2;
 
 import java.util.Date;
 
-public class ProductoFresco extends Producto{
+public class ProductoFresco extends Producto implements iMostrar{
 	
 	private Date fechaEnvasado;
 	private String paisOrigen;
@@ -24,6 +24,12 @@ public class ProductoFresco extends Producto{
 	}
 	public void setPaisOrigen(String paisOrigen) {
 		this.paisOrigen = paisOrigen;
+	}
+
+	@Override
+	public String mostrarInformacion() {
+		return "ProductoFresco [fechaEnvasado=" + fechaEnvasado + ", paisOrigen=" + paisOrigen
+				+ ", FechaCaducidad()=" + getFechaCaducidad() + ", NroLote()=" + getNroLote() + "]";
 	}
 	
 	

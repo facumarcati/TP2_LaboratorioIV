@@ -2,7 +2,7 @@ package ejercicio2;
 
 import java.util.Date;
 
-public class ProductoRefrigerado extends Producto{
+public class ProductoRefrigerado extends Producto implements iMostrar{
 
 	private int codeCtrlAlimentario;
 	
@@ -19,7 +19,10 @@ public class ProductoRefrigerado extends Producto{
 		this.codeCtrlAlimentario = codeCtrlAlimentario;
 	}
 
+	@Override
+	public String mostrarInformacion() {
+		return "ProductoRefrigerado [codeCtrlAlimentario=" + codeCtrlAlimentario + ", FechaCaducidad()="
+				+ getFechaCaducidad() + ", NroLote()=" + getNroLote() + "]";
+	}
 	
-	
-
 }

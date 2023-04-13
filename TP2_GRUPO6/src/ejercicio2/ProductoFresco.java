@@ -4,19 +4,19 @@ import java.util.Date;
 
 public class ProductoFresco extends Producto implements iMostrar{
 	
-	private Date fechaEnvasado;
+	private String fechaEnvasado;
 	private String paisOrigen;
 	
-	public ProductoFresco(Date fechaEnvasado, String paisOrigen, Date fechaCaducidad, int nroLote) {
+	public ProductoFresco(String fechaEnvasado, String paisOrigen, String fechaCaducidad, int nroLote) {
 		super(fechaCaducidad, nroLote);
 		this.fechaEnvasado = fechaEnvasado;
 		this.paisOrigen = paisOrigen;
 	}
 	
-	public Date getFechaEnvasado() {
+	public String getFechaEnvasado() {
 		return fechaEnvasado;
 	}
-	public void setFechaEnvasado(Date fechaEnvasado) {
+	public void setFechaEnvasado(String fechaEnvasado) {
 		this.fechaEnvasado = fechaEnvasado;
 	}
 	public String getPaisOrigen() {
@@ -29,7 +29,7 @@ public class ProductoFresco extends Producto implements iMostrar{
 	@Override
 	public String mostrarInformacion() {
 		return "ProductoFresco [fechaEnvasado=" + fechaEnvasado + ", paisOrigen=" + paisOrigen
-				+ ", FechaCaducidad()=" + getFechaCaducidad() + ", NroLote()=" + getNroLote() + "]";
+				+ ", FechaCaducidad=" + getFechaCaducidad() + ", NroLote=" + getNroLote() + "]";
 	}
 	
 	

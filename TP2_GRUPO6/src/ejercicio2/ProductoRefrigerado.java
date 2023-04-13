@@ -6,7 +6,7 @@ public class ProductoRefrigerado extends Producto implements iMostrar{
 
 	private int codeCtrlAlimentario;
 	
-	public ProductoRefrigerado(int codeCtrlAlimentario, Date fechaCaducidad, int nroLote) {
+	public ProductoRefrigerado(int codeCtrlAlimentario, String fechaCaducidad, int nroLote) {
 		super(fechaCaducidad, nroLote);
 		this.codeCtrlAlimentario = codeCtrlAlimentario;
 	}
@@ -21,8 +21,8 @@ public class ProductoRefrigerado extends Producto implements iMostrar{
 
 	@Override
 	public String mostrarInformacion() {
-		return "ProductoRefrigerado [codeCtrlAlimentario=" + codeCtrlAlimentario + ", FechaCaducidad()="
-				+ getFechaCaducidad() + ", NroLote()=" + getNroLote() + "]";
+		return "ProductoRefrigerado [codeCtrlAlimentario=" + codeCtrlAlimentario + ", FechaCaducidad="
+				+ getFechaCaducidad() + ", NroLote=" + getNroLote() + "]";
 	}
 	
 }

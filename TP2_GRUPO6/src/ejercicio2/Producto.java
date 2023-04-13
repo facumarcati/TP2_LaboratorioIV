@@ -1,22 +1,20 @@
 package ejercicio2;
 
-import java.util.Date;
-
 public class Producto {
 	
-	private Date fechaCaducidad;
+	private String fechaCaducidad;
 	private int nroLote;
 	
-	public Producto(Date fechaCaducidad, int nroLote){
+	public Producto(String fechaCaducidad, int nroLote){
 		this.fechaCaducidad = fechaCaducidad;
 		this.nroLote = nroLote;
 	}
 	
-	public Date getFechaCaducidad() {
+	public String getFechaCaducidad() {
 		return fechaCaducidad;
 	}
 
-	public void setFechaCaducidad(Date fechaCaducidad) {
+	public void setFechaCaducidad(String fechaCaducidad) {
 		this.fechaCaducidad = fechaCaducidad;
 	}
 	public int getNroLote() {

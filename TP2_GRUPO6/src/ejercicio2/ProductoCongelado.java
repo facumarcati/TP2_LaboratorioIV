@@ -1,12 +1,11 @@
 package ejercicio2;
 
-import java.util.Date;
 
 public class ProductoCongelado extends Producto implements iMostrar{
 
 	private float tempCongelacion;
 
-	public ProductoCongelado (float tempCongelacion, Date fechaCaducidad, int nroLote) {	
+	public ProductoCongelado (float tempCongelacion, String fechaCaducidad, int nroLote) {	
 		super(fechaCaducidad, nroLote);
 		this.tempCongelacion = tempCongelacion;
 	}
@@ -21,8 +20,8 @@ public class ProductoCongelado extends Producto implements iMostrar{
 
 	@Override
 	public String mostrarInformacion() {
-		return "ProductoCongelado [tempCongelacion=" + tempCongelacion + ", FechaCaducidad()=" + getFechaCaducidad()
-		+ ", NroLote()=" + getNroLote() + "]";
+		return "ProductoCongelado [tempCongelacion=" + tempCongelacion + ", FechaCaducidad=" + getFechaCaducidad()
+		+ ", NroLote=" + getNroLote() + "]";
 	}	
 	
 	

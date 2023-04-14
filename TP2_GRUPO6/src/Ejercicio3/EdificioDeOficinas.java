@@ -4,19 +4,17 @@ public class EdificioDeOficinas implements iEdificio {
 
 	
 	private int nroOficinas;
+	private double superficieEdificio;	
 	
-	
-	
-	public EdificioDeOficinas(int nroOficinas) {
-		
+	public EdificioDeOficinas(int nroOficinas, double superficieEdificio) {		
 			this.setNroOficinas(nroOficinas);
-			
+			this.superficieEdificio = superficieEdificio;		
 	}
 
 	@Override
 	public double getSuperficieEdificio() {
 		// TODO Auto-generated method stub
-		return 0;
+		return superficieEdificio;
 	}
 
 	public int getNroOficinas() {
@@ -31,11 +29,8 @@ public class EdificioDeOficinas implements iEdificio {
 	@Override
 	public String mostrarInformacion() {
 		// TODO Auto-generated method stub
-		return "Cantidad de Oficinas [nombre=" + nroOficinas +" ]";
+		return "Cantidad de Oficinas [numeroOficinas=" + nroOficinas +", superficieEdificio=" + this.getSuperficieEdificio()+" ]";
 	}
 
-
-	
-	
 	
 }

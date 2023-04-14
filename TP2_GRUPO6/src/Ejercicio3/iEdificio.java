@@ -4,4 +4,5 @@ public interface iEdificio {
 
 	public double getSuperficieEdificio();
 	
+	public String mostrarInformacion();
 }

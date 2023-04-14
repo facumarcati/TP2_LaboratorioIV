@@ -24,9 +24,10 @@ public class mainEjercicio3 {
 		listaEdificios.add(o1);
 		listaEdificios.add(o2);
 		
-		ListIterator<Polideportivo> it = listaEdificios.listIterator();
+		ListIterator<iEdificio> it = listaEdificios.listIterator();
 		while (it.hasNext()) {
-			Polideportivo polideportivo = it.next();			
+			iEdificio iedificio = it.next();
+			iedificio.mostrarInformacion();
 				}
 	}
 				

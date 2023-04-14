@@ -8,6 +8,7 @@ public class EdificioDeOficinas implements iEdificio {
 	
 	
 	public EdificioDeOficinas(int nroOficinas) {
+		
 			this.setNroOficinas(nroOficinas);
 			
 	}

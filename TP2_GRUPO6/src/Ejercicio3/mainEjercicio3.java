@@ -13,22 +13,21 @@ public class mainEjercicio3 {
 		Polideportivo p2 = new Polideportivo("Machester City", 10000, 1);
 		Polideportivo p3 = new Polideportivo("Liverpool", 10000, 1);
 		
-		//EdificioDeOficinas o1 = new EdificioDeOficinas(100);
-		//EdificioDeOficinas o2 = new EdificioDeOficinas(50);
+		EdificioDeOficinas o1 = new EdificioDeOficinas(100);
+		EdificioDeOficinas o2 = new EdificioDeOficinas(50);
 		
-		ArrayList<Polideportivo> listaEdificios = new ArrayList<Polideportivo>();
+		ArrayList<iEdificio> listaEdificios = new ArrayList<iEdificio>();
 		
 		listaEdificios.add(p1);
 		listaEdificios.add(p2);
 		listaEdificios.add(p3);
-		//listaEdificios.add(o1);
-		//listaEdificios.add(o2);
+		listaEdificios.add(o1);
+		listaEdificios.add(o2);
 		
 		ListIterator<Polideportivo> it = listaEdificios.listIterator();
 		while (it.hasNext()) {
 			Polideportivo polideportivo = it.next();			
-			System.out.println(polideportivo.toString());
-		}
+				}
 	}
 				
 				
